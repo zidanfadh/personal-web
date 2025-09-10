@@ -42,8 +42,12 @@ const ProjectCard = ({
                     alt={name}
                     width={500}
                     height={500}
-                    className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
-                        id % 2 === 0 ? "right-0" : "left-0"
+                    className={`absolute ${
+                        name === "OpenLitera" 
+                            ? "top-8 h-[60%] object-contain w-[65%] sm:w-[70%] md:w-[60%] lg:w-[55%] left-0" 
+                            : "-bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%]"
+                    } ${
+                        name !== "OpenLitera" ? (id % 2 === 0 ? "right-0" : "left-0") : ""
                     }`}
                     priority={true}
                 />

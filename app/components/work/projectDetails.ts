@@ -41,15 +41,15 @@ export const projects = [
     },
     {
         id: 1,
-        name: "GENKOM",
+        name: "OpenLitera",
         description:
-            "I created Genkom, an online platform designed to streamline the registration process for professional certification tests, enabling institutions to grant professional titles efficiently.",
+            "I develop and maintain OpenLitera, The first and biggest open education resources in Indonesia that provides free Books and AI Integrated for students and educators.",
         technologies: [SiWebgl,SiTypescript, SiReact],
         techNames: ["WebGL", "Typescript", "React"],
         techLinks: ["https://get.webgl.org/", "https://www.typescriptlang.org/", "https://reactjs.org/"],
         github: "#",
-        demo: "https://genkom.profezi.com",
-        image: "/projects/genkom.png",
+        demo: "https://staging.openlitera.org",
+        image: "/projects/openlitera.png",
         available: true,
     },
 ];
