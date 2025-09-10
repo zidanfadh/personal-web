@@ -30,12 +30,17 @@ const ProjectCard = ({
                 width="100%"
                 height="100%"
                 borderRadius={25}
-                color="rgba(255, 255, 255, 0.1)"
+                color={name === "OpenLitera" 
+                    ? "rgba(139, 69, 255, 0.2)"
+                    : "rgba(255, 255, 255, 0.1)"
+                }
+                angle={name === "OpenLitera" ? 135 : 0}
+                accentColor={name === "OpenLitera" ? "rgba(139, 69, 255, 0.8)" : "rgba(255, 255, 255, 1.0)"}
+                spotlightColor={name === "OpenLitera" ? "rgba(139, 69, 255, 0.3)" : "rgba(255, 255, 255, 0.25)"}
                 blur={false}
                 grain={true}
                 top="0px"
                 left="0px"
-                angle={0}
             >
                 <Image
                     src={image}
@@ -44,7 +49,7 @@ const ProjectCard = ({
                     height={500}
                     className={`absolute ${
                         name === "OpenLitera" 
-                            ? "top-8 h-[60%] object-contain w-[65%] sm:w-[70%] md:w-[60%] lg:w-[55%] left-0" 
+                            ? "inset-0 h-[45%] sm:h-[50%] md:h-[55%] lg:h-[60%] object-contain object-left-top w-[70%] sm:w-[65%] md:w-[60%] lg:w-[55%] z-0 md:z-10" 
                             : "-bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%]"
                     } ${
                         name !== "OpenLitera" ? (id % 2 === 0 ? "right-0" : "left-0") : ""
